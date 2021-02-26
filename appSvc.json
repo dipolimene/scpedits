@@ -17,7 +17,7 @@
 },
 "resources": [
 {
-"apiVersion": "2018-11-01",
+"apiVersion": "2018-02-01",
 "type": "Microsoft.Web/serverfarms",
 "name": "[parameters('AppServicePlanName')]",
 "location": "[resourceGroup().location]",
@@ -25,6 +25,7 @@
 "Tier": "Standard",
 "Name": "S1"
 },
+"kind": "app",
 "properties": {
 "name": "[parameters('AppServicePlanName')]",
 "workerSize": 1,
@@ -32,10 +33,11 @@
 }
 },
 {
-"apiVersion": "2019-08-01",
+"apiVersion": "2018-11-01",
 "type": "Microsoft.Web/sites",
 "name": "[parameters('appServiceName')]",
 "location": "[resourceGroup().location]",
+"kind": "app",
 "identity": {
 "principalId": "",
 "tenantId": "",
