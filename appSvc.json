@@ -42,6 +42,7 @@
 "type": "SystemAssigned"
 },
 "properties": {
+"enabled": true,
 "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('AppServicePlanName'))]",
 "httpsOnly": true
 },
