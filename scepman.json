@@ -59,7 +59,7 @@
 "properties": {
 "mode": "Incremental",
 "templateLink": {
-"uri": "https://raw.githubusercontent.com/dipolimene/scpedits/main/appSvc.json",
+"uri": "https://raw.githubusercontent.com/glueckkanja/gk-scepman/master/nestedtemplates/appSvc.json",
 "contentVersion": "1.0.0.0"
 },
 "parameters": {
